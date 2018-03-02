@@ -1,0 +1,9 @@
+rootProject.name = 'maps_navigation'
+
+include ':react-native-maps-with-navigation'
+project(':react-native-maps-with-navigation').projectDir = new File(rootProject.projectDir, '../node_modules/react-native-maps-with-navigation/lib/android')
+
+include ':react-native-geolocation-service'
+project(':react-native-geolocation-service').projectDir = new File(rootProject.projectDir, '../node_modules/react-native-geolocation-service/android')
+
+include ':app'
